@@ -1,0 +1,33 @@
+{
+    "include": [
+        "resources/ts/**/*",
+        "resources/ts/**/*.ts",
+        "resources/ts/**/*.d.ts",
+        "resources/ts/**/*.tsx",
+        "resources/ts/**/*.vue"
+    ],
+
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["resources/ts/*"]
+        }
+    },
+
+    "jsx": "preserve",
+    "vueCompilerOptions": {
+        "experimentalDisableTemplateSupport": true
+    }
+}
