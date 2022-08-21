@@ -4,7 +4,8 @@
         "resources/ts/**/*.ts",
         "resources/ts/**/*.d.ts",
         "resources/ts/**/*.tsx",
-        "resources/ts/**/*.vue"
+        "resources/ts/**/*.vue",
+        "tsconfig.node.json"
     ],
 
     "compilerOptions": {

@@ -1,2 +1,14 @@
-<script setup></script>
-<template><h1 class="text-3xl font-bold underline">Hello world!</h1></template>
+<script setup lang="ts">
+import Hero from "@/components/home/Hero.vue";
+import ChooseUs from "@/components/home/ChooseUs.vue";
+import Service from "@/components/home/Service.vue";
+import Plan from "@/components/home/Plan.vue";
+import Certification from "@/components/home/Certification.vue";
+</script>
+<template>
+    <Hero />
+    <ChooseUs />
+    <Service />
+    <Plan />
+    <Certification />
+</template>

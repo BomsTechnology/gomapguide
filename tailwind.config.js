@@ -6,7 +6,15 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                overpass: "Overpass",
+            },
+            colors: {
+                primary: "#00cec9",
+                secondary: "#81ecec",
+            },
+        },
     },
     plugins: [require("@tailwindcss/forms")],
 };
