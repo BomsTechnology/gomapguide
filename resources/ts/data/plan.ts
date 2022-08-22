@@ -1,16 +1,18 @@
-interface Plan {
-    abbreviation: String;
-    title: String;
-    price: Number;
-    period: String;
-    popular: Boolean;
+type Plan = {
+    id: number;
+    abbreviation: string;
+    title: string;
+    price: number;
+    period: string;
+    popular: boolean;
     bgcolor: Object;
     color: Object;
-    infos: Array<String>;
-}
+    infos: Array<string>;
+};
 
 const plans: Array<Plan> = [
     {
+        id: 1,
         abbreviation: "CG",
         title: "Conseil et Gestion",
         price: 59,
@@ -24,6 +26,7 @@ const plans: Array<Plan> = [
         ],
     },
     {
+        id: 2,
         abbreviation: "CDA",
         title: "Contrôles des Avis",
         price: 150,
@@ -38,6 +41,7 @@ const plans: Array<Plan> = [
         ],
     },
     {
+        id: 3,
         abbreviation: "DSV",
         title: "Définition des Services",
         price: 180,
@@ -52,6 +56,7 @@ const plans: Array<Plan> = [
         ],
     },
     {
+        id: 4,
         abbreviation: "REM",
         title: "Référencement et Maintenance",
         price: 389,
@@ -66,6 +71,7 @@ const plans: Array<Plan> = [
         ],
     },
     {
+        id: 5,
         abbreviation: "SAG",
         title: "Sécurisation et Accès du Google My Business",
         price: 199,
@@ -80,13 +86,29 @@ const plans: Array<Plan> = [
         ],
     },
     {
+        id: 6,
+        abbreviation: "CSW",
+        title: "Création de Site Web",
+        price: 405,
+        period: "Une fois et à vie",
+        popular: false,
+        bgcolor: { "background-color": "#34495e" },
+        color: { color: "#34495e" },
+        infos: [
+            "Créez votre propre site web",
+            "Mettez en avant toute votre entrepise à votre convenance",
+            "Permettez à vos clients de découvrir le site de votre entreprise",
+        ],
+    },
+    {
+        id: 7,
         abbreviation: "AT",
         title: "Assistance Technique",
         price: 289,
         period: "Annuel",
         popular: false,
-        bgcolor: { "background-color": "#e74c3c" },
-        color: { color: "#e74c3c" },
+        bgcolor: { "background-color": "#f39c12" },
+        color: { color: "#f39c12" },
         infos: [
             "Recevez des rapports mensuels de la part de votre technicien",
             "Assistance (12 mois)",
@@ -95,13 +117,14 @@ const plans: Array<Plan> = [
         ],
     },
     {
+        id: 8,
         abbreviation: "ROSG",
         title: "Référencement Optimal avec Sécurisation Garantie",
         price: 599,
         period: "valable 5 ans",
         popular: false,
-        bgcolor: { "background-color": "#e74c3c" },
-        color: { color: "#e74c3c" },
+        bgcolor: { "background-color": "#d35400" },
+        color: { color: "#d35400" },
         infos: [
             "5 mots clés garantis",
             "Figurez dans le top 10 sur la première page",

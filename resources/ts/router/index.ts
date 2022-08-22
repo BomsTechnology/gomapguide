@@ -3,6 +3,14 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 const Home = () => import("@/views/front/Home.vue");
 const NavBar = () => import("@/components/NavBar.vue");
 const Footer = () => import("@/components/Footer.vue");
+const Plan = () => import("@/views/front/Plan.vue");
+const Contact = () => import("@/views/front/Contact.vue");
+const About = () => import("@/views/front/About.vue");
+const LegacyNotice = () => import("@/views/front/LegacyNotice.vue");
+const Payment = () => import("@/views/front/Payment.vue");
+const PrivacyPolicy = () => import("@/views/front/PrivacyPolicy.vue");
+const TermsSales = () => import("@/views/front/TermsSales.vue");
+const TermsService = () => import("@/views/front/TermsService.vue");
 const Sidebar = () => import("@/components/SideBar.vue");
 
 declare module "vue-router" {
@@ -13,8 +21,7 @@ declare module "vue-router" {
     }
 }
 
-const siteName = "MapGuide";
-
+const prefix: string = "SEO ° Référencement Google | MapGuide";
 const routes: Array<RouteRecordRaw> = [
     // front office routes
     {
@@ -26,7 +33,103 @@ const routes: Array<RouteRecordRaw> = [
             footer: Footer,
         },
         meta: {
-            title: siteName + " - Accueil",
+            title: prefix + " - Accueil",
+        },
+    },
+    {
+        path: "/plan",
+        name: "plan",
+        components: {
+            default: Plan,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Nos Plans",
+        },
+    },
+    {
+        path: "/contact",
+        name: "contact",
+        components: {
+            default: Contact,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Contact",
+        },
+    },
+    {
+        path: "/about",
+        name: "about",
+        components: {
+            default: About,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - A Propos",
+        },
+    },
+    {
+        path: "/legacy-notice",
+        name: "legacy-notice",
+        components: {
+            default: LegacyNotice,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Mentions Légales",
+        },
+    },
+    {
+        path: "/privacy-policy",
+        name: "privacy-policy",
+        components: {
+            default: PrivacyPolicy,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Politique de confidentialité ",
+        },
+    },
+    {
+        path: "/terms-sales",
+        name: "terms-sales",
+        components: {
+            default: TermsSales,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Conditions Générales de vente",
+        },
+    },
+    {
+        path: "/terms-service",
+        name: "terms-service",
+        components: {
+            default: TermsService,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Conditions Générales d'Utilisation",
+        },
+    },
+    {
+        path: "/payment",
+        name: "payment",
+        components: {
+            default: Payment,
+            navbar: NavBar,
+            footer: Footer,
+        },
+        meta: {
+            title: prefix + " - Paiement",
         },
     },
 ];

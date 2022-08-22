@@ -10,18 +10,28 @@ import { MailIcon } from "@heroicons/vue/solid";
             <div
                 class="flex justify-end items-center lg:flex-row flex-col space-x-3 text-sm lg:text-lg"
             >
-                <a href="#" class="hover:underline block">Mentios Légales</a>
+                <router-link
+                    :to="{ name: 'legacy-notice' }"
+                    class="hover:underline block"
+                    >Mentions Légales</router-link
+                >
                 <span>-</span>
-                <a href="#" class="hover:underline block"
+                <router-link
+                    :to="{ name: 'privacy-policy' }"
+                    class="hover:underline block"
                     >Politique de confidentialité
-                </a>
+                </router-link>
                 <span>-</span>
-                <a href="#" class="hover:underline block"
+                <router-link
+                    :to="{ name: 'terms-service' }"
+                    class="hover:underline block"
                     >Conditions Générales d'Utilisation
-                </a>
+                </router-link>
                 <span>-</span>
-                <a href="#" class="hover:underline block"
-                    >Conditions Générales de vente</a
+                <router-link
+                    :to="{ name: 'terms-sales' }"
+                    class="hover:underline block"
+                    >Conditions Générales de vente</router-link
                 >
             </div>
             <div class="flex items-center justify-center space-x-4">
@@ -77,11 +87,18 @@ import { MailIcon } from "@heroicons/vue/solid";
                 >
             </h1>
             <div class="flex justify-end items-center space-x-3">
-                <a href="#" class="hover:underline">Accueil </a><span>|</span>
-                <a href="#" class="hover:underline">A Propos </a><span>|</span
-                ><a href="#" class="hover:underline">Actualités </a
+                <router-link :to="{ name: 'home' }" class="hover:underline"
+                    >Accueil </router-link
                 ><span>|</span>
-                <a href="#" class="hover:underline">Contact</a>
+                <router-link :to="{ name: 'plan' }" class="hover:underline"
+                    >Plans</router-link
+                ><span>|</span
+                ><router-link :to="{ name: 'about' }" class="hover:underline"
+                    >A Propos </router-link
+                ><span>|</span>
+                <router-link :to="{ name: 'contact' }" class="hover:underline"
+                    >Contact</router-link
+                >
             </div>
         </div>
     </footer>

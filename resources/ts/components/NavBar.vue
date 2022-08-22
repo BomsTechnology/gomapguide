@@ -100,21 +100,21 @@ const goTop = () => {
                     class="block px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors"
                     >Accueil</router-link
                 >
-                <a
-                    href="#"
+                <router-link
+                    :to="{ name: 'plan' }"
                     class="block px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors"
-                    >Plans</a
+                    >Plans</router-link
                 >
-                <a
-                    href="#"
+                <router-link
+                    :to="{ name: 'about' }"
                     class="block px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors"
-                    >A Propos</a
+                    >A Propos</router-link
                 >
 
-                <a
-                    href="#"
+                <router-link
+                    :to="{ name: 'contact' }"
                     class="block lg:px-4 px-3 py-2 rounded hover:bg-primary hover:text-white transition-colors"
-                    >Contact</a
+                    >Contact</router-link
                 >
 
                 <div class="flex items-center space-x-2 lg:px-4 px-3 py-2">

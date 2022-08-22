@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import { CheckCircleIcon } from "@heroicons/vue/outline";
 import type { Plan } from "@/data/plan";
-const props = defineProps({
-    data: {
-        type: Object,
-        default: {},
-    },
-});
+interface Props {
+    data: Plan;
+}
+const props = defineProps<Props>();
 </script>
 <template>
-    <a
-        href="#"
+    <router-link
+        :to="{ name: 'payment' }"
         class="bg-white shadow overflow-hidden relative hover:shadow-xl transition-shadow"
     >
         <div
@@ -115,5 +113,5 @@ const props = defineProps({
                 Souscrire
             </button>
         </div>
-    </a>
+    </router-link>
 </template>
