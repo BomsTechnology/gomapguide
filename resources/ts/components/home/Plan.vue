@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import Plan from "../Plan.vue";
 import { plans } from "@/data/plan";
-const items = plans.splice(0, 5);
+import type { Plan as P } from "@/data/plan";
+import { onMounted, Ref, ref } from "vue";
+
+const items: Ref<Array<P>> = ref([]);
+
+onMounted(() => {
+    items.value = plans.splice(0, 5);
+});
 </script>
 <template>
     <div

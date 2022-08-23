@@ -22,7 +22,7 @@ const props = defineProps({
                 <span
                     v-for="(link, index) in links"
                     :key="index"
-                    class="text-xs lg:text-sm"
+                    class="text-xs lg:text-sm flex items-center"
                 >
                     <router-link
                         v-if="link.route"
@@ -31,7 +31,7 @@ const props = defineProps({
                         >{{ link.label }}</router-link
                     >
                     <span v-else>{{ link.label }}</span>
-                    <span class="last:hidden"
+                    <span :class="links.length == index + 1 ? 'hidden' : ''"
                         ><ChevronRightIcon class="h-4 w-4"
                     /></span>
                 </span>

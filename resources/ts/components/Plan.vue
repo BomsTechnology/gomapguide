@@ -30,7 +30,7 @@ const props = defineProps<Props>();
                 {{ data.title }}
             </h2>
         </div>
-        <div class="px-10 h-2/4">
+        <div class="px-10 h-2/4 mb-6">
             <div class="text-center py-10">
                 <h1 class="font-bold text-5xl lg:text-6xl">
                     <span class="">{{ data.price }}</span>

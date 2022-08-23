@@ -92,10 +92,10 @@ import { MailIcon } from "@heroicons/vue/solid";
                 ><span>|</span>
                 <router-link :to="{ name: 'plan' }" class="hover:underline"
                     >Plans</router-link
-                ><span>|</span
-                ><router-link :to="{ name: 'about' }" class="hover:underline"
-                    >A Propos </router-link
                 ><span>|</span>
+                <!-- <router-link :to="{ name: 'about' }" class="hover:underline"
+                    >A Propos </router-link
+                ><span>|</span> -->
                 <router-link :to="{ name: 'contact' }" class="hover:underline"
                     >Contact</router-link
                 >

@@ -7,10 +7,14 @@ import {
     MailIcon,
 } from "@heroicons/vue/solid";
 import { reactive, ref } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 const open = reactive({
     menu: false,
     submenu: false,
 });
+
 const isScroll = ref(false);
 document.addEventListener("scroll", function () {
     let bodyTopPosition = document.body.getBoundingClientRect().top;
@@ -26,6 +30,11 @@ const goTop = () => {
     });
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+};
+
+const navigationTo = async (routeName: string): Promise<void> => {
+    open.menu = false;
+    router.push({ name: routeName });
 };
 </script>
 <template>
@@ -57,7 +66,7 @@ const goTop = () => {
                         v-else
                         src="/images/logo/logo1.png"
                         alt="logo"
-                        class="lg:h-20 h-14"
+                        class="lg:h-16 h-12"
                     />
                 </router-link>
                 <div
@@ -105,11 +114,11 @@ const goTop = () => {
                     class="block px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors"
                     >Plans</router-link
                 >
-                <router-link
+                <!-- <router-link
                     :to="{ name: 'about' }"
                     class="block px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors"
                     >A Propos</router-link
-                >
+                > -->
 
                 <router-link
                     :to="{ name: 'contact' }"
@@ -174,27 +183,35 @@ const goTop = () => {
                     v-if="open.menu"
                     class="mt-4 lg:hidden w-full text-gray-500 shadow text-sm rounded bg-white"
                 >
-                    <a
-                        href="#"
-                        class="block px-3 py-2 rounded hover:bg-primary border-b hover:text-white transition-colors"
-                        >Accueil</a
+                    <button
+                        type="button"
+                        @click="navigationTo('home')"
+                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
                     >
-                    <a
-                        href="#"
-                        class="block px-3 py-2 rounded hover:bg-primary border-b hover:text-white transition-colors"
-                        >Plans</a
+                        Accueil
+                    </button>
+                    <!-- <button
+                        type="button"
+                        @click="navigationTo('plan')"
+                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
                     >
-                    <a
-                        href="#"
-                        class="block px-3 py-2 rounded hover:bg-primary border-b hover:text-white transition-colors"
-                        >A Propos</a
+                        Plans
+                    </button> -->
+                    <button
+                        type="button"
+                        @click="navigationTo('about')"
+                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
                     >
+                        A Propos
+                    </button>
 
-                    <a
-                        href="#"
-                        class="block px-3 py-2 rounded hover:bg-primary hover:text-white transition-colors"
-                        >Contact</a
+                    <button
+                        type="button"
+                        @click="navigationTo('contact')"
+                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary hover:text-white transition-colors"
                     >
+                        Contact
+                    </button>
                     <div
                         class="flex items-center justify-center mt-2 space-x-2 p-4"
                     >
