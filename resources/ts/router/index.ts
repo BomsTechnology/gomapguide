@@ -21,7 +21,7 @@ declare module "vue-router" {
     }
 }
 
-const prefix: string = "SEO ° Référencement Google | MapGuide";
+const prefix: string = "Canada | SEO ° Référencement Google | MapGuide";
 const routes: Array<RouteRecordRaw> = [
     // front office routes
     {
@@ -121,7 +121,8 @@ const routes: Array<RouteRecordRaw> = [
         },
     },
     {
-        path: "/payment",
+        path: "/payment/:id",
+        props: true,
         name: "payment",
         components: {
             default: Payment,
@@ -130,6 +131,14 @@ const routes: Array<RouteRecordRaw> = [
         },
         meta: {
             title: prefix + " - Paiement",
+        },
+    },
+    {
+        path: "/:pathMatch(.*)",
+        name: "not.found",
+        component: () => import("@/views/front/NotFound.vue"),
+        meta: {
+            title: prefix + " - Page Introuvable",
         },
     },
 ];

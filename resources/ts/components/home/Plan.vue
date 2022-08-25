@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import Plan from "../Plan.vue";
-import { plans } from "@/data/plan";
-import type { Plan as P } from "@/data/plan";
+import { usePlanStore } from "@/stores/plan";
+import type { Plan as P } from "@/stores/plan";
 import { onMounted, Ref, ref } from "vue";
 
+const planStore = usePlanStore();
 const items: Ref<Array<P>> = ref([]);
 
-onMounted(() => {
-    items.value = plans.splice(0, 5);
+onMounted(async () => {
+    for (let i = 0; i < 5; i++) {
+        items.value.push(planStore.plans[i] as unknown as P);
+    }
 });
 </script>
 <template>

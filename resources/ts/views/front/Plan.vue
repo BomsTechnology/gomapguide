@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Header from "@/components/Header.vue";
+import { usePlanStore } from "@/stores/plan";
 import Plan from "@/components/Plan.vue";
-import { plans } from "@/data/plan";
 
+const planStore = usePlanStore();
 const links = [
     {
         label: "Nos Plans",
@@ -20,6 +21,10 @@ const links = [
     <section
         class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 xl:px-36 lg:px-18 px-4 py-8"
     >
-        <Plan v-for="(item, index) in plans" :key="index" :data="item" />
+        <Plan
+            v-for="(item, index) in planStore.plans"
+            :key="index"
+            :data="item"
+        />
     </section>
 </template>

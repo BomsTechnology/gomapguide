@@ -190,20 +190,20 @@ const navigationTo = async (routeName: string): Promise<void> => {
                     >
                         Accueil
                     </button>
-                    <!-- <button
+                    <button
                         type="button"
                         @click="navigationTo('plan')"
                         class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
                     >
                         Plans
-                    </button> -->
-                    <button
+                    </button>
+                    <!-- <button
                         type="button"
                         @click="navigationTo('about')"
                         class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
                     >
                         A Propos
-                    </button>
+                    </button> -->
 
                     <button
                         type="button"
@@ -275,3 +275,8 @@ const navigationTo = async (routeName: string): Promise<void> => {
         <ArrowCircleUpIcon class="h-6 w-6" />
     </button>
 </template>
+<script lang="ts">
+export default {
+    inheritAttrs: false,
+};
+</script>

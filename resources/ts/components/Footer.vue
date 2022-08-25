@@ -103,3 +103,8 @@ import { MailIcon } from "@heroicons/vue/solid";
         </div>
     </footer>
 </template>
+<!-- <script lang="ts">
+export default {
+    inheritAttrs: false,
+};
+</script> -->

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { CheckCircleIcon } from "@heroicons/vue/outline";
-import type { Plan } from "@/data/plan";
+import type { Plan } from "@/stores/plan";
 interface Props {
     data: Plan;
 }
@@ -8,7 +8,12 @@ const props = defineProps<Props>();
 </script>
 <template>
     <router-link
-        :to="{ name: 'payment' }"
+        :to="{
+            name: 'payment',
+            params: {
+                id: data.id,
+            },
+        }"
         class="bg-white shadow overflow-hidden relative hover:shadow-xl transition-shadow"
     >
         <div
@@ -98,7 +103,7 @@ const props = defineProps<Props>();
                     >
                         <h1 class="flex items-center space-x-2 text-gray-500">
                             <span><CheckCircleIcon class="h-5 w-5" /></span>
-                            <span class="mt-1">{{ item }} </span>
+                            <span class="mt-1">{{ item.value }} </span>
                         </h1>
                     </li>
                 </ul>
