@@ -39,7 +39,7 @@
 
     <title>SEO ° Référencement Google | MapGuide - Accueil</title>
     <link rel="icon" sizes="76x76" href="{{ asset('/images/icon/logo.png') }}">
-    @vite('resources/css/app.css')
+
 </head>
 
 <body class=" font-overpass bg-white text-lg">

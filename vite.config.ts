@@ -13,7 +13,7 @@ export default defineConfig({
             },
         }),
         laravel({
-            input: ["resources/js/app.ts"],
+            input: ["resources/ts/app.ts"],
             refresh: true,
         }),
     ],
