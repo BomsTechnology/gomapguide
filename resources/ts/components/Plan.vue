@@ -14,10 +14,10 @@ const props = defineProps<Props>();
                 id: data.id,
             },
         }"
-        class="bg-white shadow overflow-hidden relative hover:shadow-xl transition-shadow"
+        class="bg-gray-700 shadow overflow-hidden relative hover:shadow-xl transition-shadow"
     >
         <div
-            class="absolute bg-black pl-16 pr-10 rotate-45 -right-10 top-2"
+            class="absolute bg-gray-500 pl-16 pr-10 rotate-45 -right-10 top-2"
             v-if="data.popular"
         >
             <span class="text-white text-xs font-black uppercase"
@@ -28,9 +28,6 @@ const props = defineProps<Props>();
             class="text-center py-8 px-4 text-white overflow-hidden h-1/4"
             :style="data.bgcolor"
         >
-            <h6 class="font-semibold lg:text-lg text-sm">
-                {{ data.abbreviation }}
-            </h6>
             <h2 class="font-bold uppercase text-xl lg:text-2xl mt-4">
                 {{ data.title }}
             </h2>
@@ -39,15 +36,15 @@ const props = defineProps<Props>();
             <div class="text-center py-10">
                 <h1 class="font-bold text-5xl lg:text-6xl">
                     <span class="">{{ data.price }}</span>
-                    <sup class="text-2xl lg:text-4xl">€</sup>
+                    <sub class="text-xl lg:text-2xl">USD</sub>
                 </h1>
-                <p class="text-gray-500 text-xs font-light tracking-widest">
+                <p class="text-gray-50 text-xs font-light tracking-widest">
                     {{ data.period }}
                 </p>
             </div>
             <div class="pb-4 h-full">
                 <ul class="text-sm justify-center flex flex-col space-y-2">
-                    <li class="last:border-0 border-b pb-2 text-gray-500">
+                    <li class="last:border-0 border-b pb-2 text-gray-50">
                         <h1 class="flex items-center space-x-2">
                             <span>
                                 <svg
@@ -92,7 +89,7 @@ const props = defineProps<Props>();
                                 </svg>
                             </span>
                             <span class="mt-1"
-                                >Mise à Joue Covid-19 incluse</span
+                                >Mise à Jour Covid-19 incluse</span
                             >
                         </h1>
                     </li>
@@ -101,7 +98,7 @@ const props = defineProps<Props>();
                         v-for="(item, index) in data.infos"
                         :key="index"
                     >
-                        <h1 class="flex items-center space-x-2 text-gray-500">
+                        <h1 class="flex items-center space-x-2 text-gray-50">
                             <span><CheckCircleIcon class="h-5 w-5" /></span>
                             <span class="mt-1">{{ item.value }} </span>
                         </h1>

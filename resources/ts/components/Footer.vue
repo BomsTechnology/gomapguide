@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { MailIcon } from "@heroicons/vue/solid";
+import { LocationMarkerIcon, MailIcon, PhoneIcon } from "@heroicons/vue/solid";
 </script>
 <template>
     <footer class="">
         <div
-            class="bg-[#2e3b42] text-white text-sm xl:px-36 lg:px-18 px-4 py-4 w-full flex flex-col justify-center items-center space-y-5"
+            class="bg-gray-800 text-white text-sm xl:px-36 lg:px-18 px-4 py-4 w-full flex flex-col justify-center items-center space-y-5"
         >
             <img src="/images/logo/logo2.png" alt="logo" class="lg:h-14 h-10" />
             <div
@@ -34,8 +34,33 @@ import { MailIcon } from "@heroicons/vue/solid";
                     >Conditions Générales de vente</router-link
                 >
             </div>
+            <div
+                class="lg:flex-row flex-col flex items-center lg:space-y-0 space-y-3 lg:space-x-3"
+            >
+                <div class="flex items-center space-x-2">
+                    <span
+                        ><LocationMarkerIcon class="h-6 w-6 text-primary"
+                    /></span>
+
+                    <span class="text-sm text-gray-50 mt-1"
+                        >1253, av McGill Collège, Montréal QC H3B 2Y5
+                    </span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span><MailIcon class="h-6 w-6 text-primary" /></span>
+
+                    <span class="text-sm text-gray-50 mt-1"
+                        >contact@gomapguide.com</span
+                    >
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span><PhoneIcon class="h-6 w-6 text-primary" /></span>
+
+                    <span class="text-sm text-gray-50 mt-1">+447360263574</span>
+                </div>
+            </div>
             <div class="flex items-center justify-center space-x-4">
-                <button class="bg-[#263036] hover:bg-primary p-3">
+                <button class="bg-gray-700 hover:bg-primary p-3">
                     <svg
                         class="h-4 w-4"
                         viewBox="0 0 40 40"
@@ -50,7 +75,7 @@ import { MailIcon } from "@heroicons/vue/solid";
                         />
                     </svg>
                 </button>
-                <button class="bg-[#263036] hover:bg-primary p-3">
+                <button class="bg-gray-700 hover:bg-primary p-3">
                     <svg
                         class="h-4 w-4"
                         viewBox="0 0 36 36"
@@ -65,25 +90,18 @@ import { MailIcon } from "@heroicons/vue/solid";
                         />
                     </svg>
                 </button>
-                <button class="bg-[#263036] hover:bg-primary p-3">
+                <button class="bg-gray-700 hover:bg-primary p-3">
                     <MailIcon class="h-5 w-4.5" />
                 </button>
             </div>
         </div>
         <div
-            class="bg-[#263036] text-white text-xs xl:px-36 lg:px-18 px-4 py-4 w-full flex lg:flex-row flex-col-reverse items-center justify-between"
+            class="text-white text-xs xl:px-36 lg:px-18 px-4 py-4 w-full flex lg:flex-row flex-col-reverse items-center justify-between"
         >
             <h1 class="lg:mt-0 mt-2">
                 © 2022 Copyright
                 <span class="text-primary font-semibold hover:underline"
                     >MapGuide</span
-                >
-                - Designed by
-                <a
-                    href="https://twitter.com/MarcelinSigha"
-                    target="_blank"
-                    class="text-primary font-semibold hover:underline"
-                    >Marcelin Sigha</a
                 >
             </h1>
             <div class="flex justify-end items-center space-x-3">

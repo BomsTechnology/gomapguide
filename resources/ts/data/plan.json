@@ -1,10 +1,9 @@
 [
     {
         "id": "1",
-        "abbreviation": "CG",
-        "title": "Conseil et Gestion",
-        "price": 59,
-        "period": "Mensuel",
+        "title": "Accès",
+        "price": 159,
+        "period": "Paiement unique",
         "popular": false,
         "bgcolor": {
             "background-color": "#3498db"
@@ -14,20 +13,16 @@
         },
         "infos": [
             {
-                "value": "Publicité sur les réseaux sociaux"
-            },
-            {
-                "value": "Mise à jour régulière des données Google My Business"
+                "value": "Devenez l'unique gestionnaire de votre profil avec un mot de passe personnel"
             }
         ]
     },
     {
         "id": "2",
-        "abbreviation": "CDA",
-        "title": "Contrôles des Avis",
-        "price": 150,
-        "period": "Annuel",
-        "popular": false,
+        "title": "Profil Professionnel",
+        "price": 259,
+        "period": "Paiement unique",
+        "popular": true,
         "bgcolor": {
             "background-color": "#e67e22"
         },
@@ -36,23 +31,22 @@
         },
         "infos": [
             {
-                "value": "Soyez le mieux noté et coté de votre secteur"
+                "value": "Mise à jour des informations"
             },
             {
-                "value": "Gérez les avis indésirables"
+                "value": "Sécurisez votre Google My Business"
             },
             {
-                "value": "Recevez plus d'avis positifs"
+                "value": "Optimisez votre entreprise"
             }
         ]
     },
     {
         "id": "3",
-        "abbreviation": "DSV",
-        "title": "Définition des Services",
-        "price": 180,
-        "period": "Annuel",
-        "popular": true,
+        "title": "Profil Professionnel + Assistance 365",
+        "price": 289,
+        "period": "Paiement annuel",
+        "popular": false,
         "bgcolor": {
             "background-color": "#9b59b6"
         },
@@ -61,22 +55,24 @@
         },
         "infos": [
             {
-                "value": "Listez entièrement vos produits sur Google"
+                "value": "Mise à jour des informations"
             },
             {
-                "value": "Détaillez vos produits et services"
+                "value": "Sécurisez votre Google My Business"
             },
             {
-                "value": "Montrez vos services et produits phares à vos clients"
+                "value": "Optimisez votre entreprise"
+            },
+            {
+                "value": "Assistance et suivi technique"
             }
         ]
     },
     {
         "id": "4",
-        "abbreviation": "REM",
-        "title": "Référencement et Maintenance",
-        "price": 389,
-        "period": "Une fois et à vie",
+        "title": "Seo Local",
+        "price": 299,
+        "period": "Paiement annuel",
         "popular": true,
         "bgcolor": {
             "background-color": "#1abc9c"
@@ -86,22 +82,21 @@
         },
         "infos": [
             {
-                "value": "Mettez vous devant vos concurrents"
+                "value": "Parmi les 5 premiers résultats"
             },
             {
-                "value": "Soyez en tête des recherches"
+                "value": "Booster votre visibilité"
             },
             {
-                "value": "Maintenance de votre profil"
+                "value": "Prenez le dessus face à la concurrence"
             }
         ]
     },
     {
         "id": "5",
-        "abbreviation": "SAG",
-        "title": "Sécurisation et Accès du Google My Business",
-        "price": 199,
-        "period": "Une fois et à vie",
+        "title": "Création du profil + 10 avis",
+        "price": 399,
+        "period": "Paiement unique",
         "popular": false,
         "bgcolor": {
             "background-color": "#e74c3c"
@@ -111,97 +106,16 @@
         },
         "infos": [
             {
-                "value": "Accédez à votre profil Google My Business"
+                "value": "Créez votre fiche Google My Business"
             },
             {
-                "value": "Sécurisez votre profil"
+                "value": "Mise à jour des informations"
             },
             {
-                "value": "Empêchez des modifications malveillantes"
-            }
-        ]
-    },
-    {
-        "id": "6",
-        "abbreviation": "CSW",
-        "title": "Création de Site Web",
-        "price": 405,
-        "period": "Une fois et à vie",
-        "popular": false,
-        "bgcolor": {
-            "background-color": "#34495e"
-        },
-        "color": {
-            "color": "#34495e"
-        },
-        "infos": [
-            {
-                "value": "Créez votre propre site web"
+                "value": "Sécurisez votre Google My Business"
             },
             {
-                "value": "Mettez en avant toute votre entrepise à votre convenance"
-            },
-            {
-                "value": "Permettez à vos clients de découvrir le site de votre entreprise"
-            }
-        ]
-    },
-    {
-        "id": "7",
-        "abbreviation": "AT",
-        "title": "Assistance Technique",
-        "price": 289,
-        "period": "Annuel",
-        "popular": false,
-        "bgcolor": {
-            "background-color": "#f39c12"
-        },
-        "color": {
-            "color": "#f39c12"
-        },
-        "infos": [
-            {
-                "value": "Recevez des rapports mensuels de la part de votre technicien"
-            },
-            {
-                "value": "Assistance (12 mois)"
-            },
-            {
-                "value": "Sécurisation du profil"
-            },
-            {
-                "value": "Accédez à votre profil Google My Busness et Empêchez les modifications extérieures"
-            }
-        ]
-    },
-    {
-        "id": "8",
-        "abbreviation": "ROSG",
-        "title": "Référencement Optimal avec Sécurisation Garantie",
-        "price": 599,
-        "period": "valable 5 ans",
-        "popular": false,
-        "bgcolor": {
-            "background-color": "#d35400"
-        },
-        "color": {
-            "color": "#d35400"
-        },
-        "infos": [
-            {
-                "value": "5 mots clés garantis"
-            },
-            {
-                "value": "Figurez dans le top 10 sur la première page"
-            },
-            {
-                "value": "Maintenance du profil (pendant 60 mois)"
-            },
-            {
-                "value": "Obtenez le QR code de votre compte publicitaire Facebook et jumelez le à votre Google My Business"
-            },
-            {
-                "value": "Contact direct et permanent avec votre technicien (IT)"
+                "value": "Optimisez votre entreprise"
             }
         ]
     }

@@ -10,7 +10,7 @@ const links = [
 </script>
 <template>
     <Header :title="'Contact'" :links="links" />
-    <section class="xl:px-36 lg:px-18 py-14">
+    <section class="xl:px-36 lg:px-18 py-14 bg-gray-50">
         <div class="w-full lg:flex">
             <div class="lg:w-3/5 w-full md:py-10 px-8">
                 <div class="text-gray-700 lg:text-left text-center">
@@ -34,8 +34,8 @@ const links = [
                         /></span>
 
                         <span class="text-sm text-gray-700 mt-1"
-                            >71-75 Shelton street</span
-                        >
+                            >1253, av McGill Collège, Montréal QC H3B 2Y5
+                        </span>
                     </div>
                     <div class="flex items-center space-x-2">
                         <span><MailIcon class="h-6 w-6 text-primary" /></span>

@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <div
         class="h-72 bg-cover"
-        style="background-image: url('/images/seo3.jpg')"
+        style="background-image: url('/images/seo1.jpg')"
     >
         <div
             class="bg-black/50 w-full h-full flex flex-col justify-end items-center space-y-6 py-10 text-white"

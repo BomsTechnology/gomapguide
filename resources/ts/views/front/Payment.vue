@@ -25,7 +25,7 @@ const links = [
 </script>
 <template>
     <Header :title="'Paiement'" :links="links" />
-    <section class="xl:px-36 lg:px-18 px-4 py-16">
+    <section class="xl:px-36 lg:px-18 px-4 py-16 bg-white">
         <div class="w-full lg:flex">
             <img
                 src="/images/icon/payment.svg"
@@ -39,9 +39,9 @@ const links = [
                 <div
                     class="p-6 shadow-lg bg-white rounded-lg w-1/2 h-1/2 -mt-10 inline-block text-center pb-3"
                 >
-                    <h1 class="text-4xl font-semibold">
+                    <h1 class="text-4xl font-semibold text-gray-900">
                         {{ item[0].price }}
-                        <sup class="lg:text-2xl">€</sup>
+                        <sup class="lg:text-2xl">USD</sup>
                     </h1>
                     <p class="text-gray-500 block mt-4 py-4 border-t">
                         {{ item[0].title }}

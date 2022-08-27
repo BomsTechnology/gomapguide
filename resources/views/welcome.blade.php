@@ -42,7 +42,7 @@
 
 </head>
 
-<body class=" font-overpass bg-white text-lg">
+<body class=" font-overpass bg-gray-900 text-white text-lg">
     <main id="app"></main>
     @vite('resources/ts/app.ts')
 </body>

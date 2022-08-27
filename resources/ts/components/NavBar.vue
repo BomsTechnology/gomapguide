@@ -41,7 +41,7 @@ const navigationTo = async (routeName: string): Promise<void> => {
     <nav
         :class="[
             isScroll
-                ? 'w-full lg:py-0 py-3 px-4 shadow-md z-20 fixed bg-white text-gray-500'
+                ? 'w-full lg:py-0 py-3 px-4 shadow-md z-20 fixed bg-gray-900 text-white '
                 : 'w-full lg:py-6 py-4 lg:px-10 px-4 lg:shadow-none z-50 text-white fixed bg-transparent',
         ]"
     >
@@ -56,15 +56,7 @@ const navigationTo = async (routeName: string): Promise<void> => {
                     class="text-primary font-satisfy lg:text-3xl md:2xl text-xl font-bold"
                 >
                     <img
-                        v-if="!isScroll"
                         src="/images/logo/logo2.png"
-                        alt="logo"
-                        class="lg:h-16 h-12"
-                    />
-
-                    <img
-                        v-else
-                        src="/images/logo/logo1.png"
                         alt="logo"
                         class="lg:h-16 h-12"
                     />
@@ -181,26 +173,26 @@ const navigationTo = async (routeName: string): Promise<void> => {
             >
                 <div
                     v-if="open.menu"
-                    class="mt-4 lg:hidden w-full text-gray-500 shadow text-sm rounded bg-white"
+                    class="mt-4 lg:hidden w-full text-gray-50 shadow text-sm rounded bg-gray-900"
                 >
                     <button
                         type="button"
                         @click="navigationTo('home')"
-                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
+                        class="block px-3 py-2 w-full text-left hover:bg-primary border-b hover:text-white transition-colors"
                     >
                         Accueil
                     </button>
                     <button
                         type="button"
                         @click="navigationTo('plan')"
-                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
+                        class="block px-3 py-2 w-full text-left hover:bg-primary border-b hover:text-white transition-colors"
                     >
                         Plans
                     </button>
                     <!-- <button
                         type="button"
                         @click="navigationTo('about')"
-                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary border-b hover:text-white transition-colors"
+                        class="block px-3 py-2 w-full text-left  hover:bg-primary border-b hover:text-white transition-colors"
                     >
                         A Propos
                     </button> -->
@@ -208,7 +200,7 @@ const navigationTo = async (routeName: string): Promise<void> => {
                     <button
                         type="button"
                         @click="navigationTo('contact')"
-                        class="block px-3 py-2 w-full text-left rounded hover:bg-primary hover:text-white transition-colors"
+                        class="block px-3 py-2 w-full text-left hover:bg-primary hover:text-white transition-colors"
                     >
                         Contact
                     </button>
@@ -268,11 +260,11 @@ const navigationTo = async (routeName: string): Promise<void> => {
         id="btnToTop"
         :class="[
             isScroll
-                ? 'fixed bottom-8 right-4 z-40 bg-white items-center justify-center rounded-full border border-primary p-2 text-primary'
+                ? 'fixed bottom-8 right-4 z-40 bg-gray-900 items-center justify-center rounded-full border border-gray-500 p-2 text-white'
                 : 'hidden',
         ]"
     >
-        <ArrowCircleUpIcon class="h-6 w-6" />
+        <ArrowCircleUpIcon class="h-6 w-6 stroke-primary" />
     </button>
 </template>
 <script lang="ts">

@@ -3,10 +3,10 @@ import Services from '@/components/home/Services.vue';
 <template>
     <section
         class="lg:h-screen relative bg-fixed bg-cover object-cover"
-        style="background-image: url('/images/choose1.jpg')"
+        style="background-image: url('/images/service.jpeg')"
     >
         <div
-            class="w-full h-full bg-primary/25 flex flex-col justify-center items-center py-8"
+            class="w-full h-full bg-gray-900/50 flex flex-col justify-center items-center py-8"
         >
             <h1 class="font-black text-4xl lg:text-6xl text-white">
                 Nos Services
