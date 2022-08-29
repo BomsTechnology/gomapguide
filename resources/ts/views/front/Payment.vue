@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import Header from "@/components/Header.vue";
 import axios from "axios";
+// import { useRouter } from "vue-router";
 import { usePlanStore } from "@/stores/plan";
 import type { Plan } from "@/stores/plan";
 import { onMounted, ref, Ref } from "vue";
 import Spin from "../../components/Spin.vue";
 
+// const router = useRouter();
 const planStore = usePlanStore();
 const item: Ref<Array<Plan> | null> = ref(null);
 const loading: Ref<Number> = ref(0);
@@ -14,6 +16,9 @@ const props = defineProps({
 });
 onMounted(async () => {
     item.value = planStore.planById(props.id);
+    if (item.value.length == 0) {
+        location.href = "/not-found";
+    }
 });
 
 async function stripePay() {
@@ -93,7 +98,7 @@ const links = [
                 <div
                     class="h-full w-full flex justify-center py-10 items-center px-4 lg:space-y-0 space-y-4 lg:space-x-4 lg:flex-row flex-col"
                 >
-                    <button
+                    <!-- <button
                         v-if="loading === 0"
                         type="button"
                         @click="paypalPay"
@@ -117,7 +122,7 @@ const links = [
                         </span>
                         <span>Pay with</span>
                         <span>Paypal</span>
-                    </button>
+                    </button> -->
                     <button
                         v-if="loading === 0"
                         type="button"

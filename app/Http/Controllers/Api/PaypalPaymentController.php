@@ -10,16 +10,14 @@ class PaypalPaymentController extends Controller
 {
     private $gateway;
 
-    public function __construct()
+
+
+    public function index(Request $request)
     {
         $this->gateway = Omnipay::create('PayPal_Rest');
         $this->gateway->setClientId(env('PAYPAL_CLIENT_ID'));
         $this->gateway->setSecret(env('PAYPAL_SECRET_ID'));
         $this->gateway->setTestMode(false);
-    }
-
-    public function index(Request $request)
-    {
         try {
             $reponse = $this->gateway->purchase([
                 'amount' =>  $request->price,

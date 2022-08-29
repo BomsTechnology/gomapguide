@@ -135,7 +135,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     {
         path: "/:pathMatch(.*)",
-        name: "not.found",
+        name: "not-found",
         component: () => import("@/views/front/NotFound.vue"),
         meta: {
             title: prefix + " - Page Introuvable",

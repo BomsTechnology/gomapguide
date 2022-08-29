@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Stripe\Checkout\Session;
 use Stripe\Stripe;
+use Stripe\Webhook;
 
 class StripePaymentController extends Controller
 {
@@ -54,5 +55,21 @@ class StripePaymentController extends Controller
             ]
         ];
         return response($response, 201);
+    }
+
+    public function handle(Request $request)
+    {
+
+        $payload = @file_get_contents('php://input');
+        $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
+        $event = Webhook::constructEvent(
+            $payload,
+            $sig_header,
+            env('STRIPE_ENDPOINT_SECRET')
+        );
+
+        if ($event->type === 'checkout.session.completed') {
+            dd('ok');
+        }
     }
 }
