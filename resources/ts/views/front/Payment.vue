@@ -1,17 +1,59 @@
 <script setup lang="ts">
 import Header from "@/components/Header.vue";
+import axios from "axios";
 import { usePlanStore } from "@/stores/plan";
 import type { Plan } from "@/stores/plan";
 import { onMounted, ref, Ref } from "vue";
+import Spin from "../../components/Spin.vue";
 
 const planStore = usePlanStore();
 const item: Ref<Array<Plan> | null> = ref(null);
+const loading: Ref<Number> = ref(0);
 const props = defineProps({
     id: { type: String, default: "" },
 });
 onMounted(async () => {
     item.value = planStore.planById(props.id);
 });
+
+async function stripePay() {
+    try {
+        loading.value = 1;
+        if (item.value != null) {
+            let response = await axios.post(
+                "/api/payment-stripe",
+                item.value[0]
+            );
+            location.href = response.data.data.redirectUrl;
+            loading.value = 2;
+        } else {
+            loading.value = 0;
+            console.log("Errors");
+        }
+    } catch (e) {
+        loading.value = 0;
+        console.log(e);
+    }
+}
+async function paypalPay() {
+    try {
+        loading.value = 1;
+        if (item.value != null) {
+            let response = await axios.post(
+                "/api/payment-paypal",
+                item.value[0]
+            );
+            location.href = response.data.data.redirectUrl;
+            loading.value = 2;
+        } else {
+            loading.value = 0;
+            console.log("Errors");
+        }
+    } catch (e) {
+        loading.value = 0;
+        console.log(e);
+    }
+}
 const links = [
     {
         label: "Nos Plans",
@@ -52,6 +94,9 @@ const links = [
                     class="h-full w-full flex justify-center py-10 items-center px-4 lg:space-y-0 space-y-4 lg:space-x-4 lg:flex-row flex-col"
                 >
                     <button
+                        v-if="loading === 0"
+                        type="button"
+                        @click="paypalPay"
                         class="px-3 py-2 border rounded bg-[#0070BA] text-white flex items-center justify-center space-x-2"
                     >
                         <span>
@@ -74,6 +119,9 @@ const links = [
                         <span>Paypal</span>
                     </button>
                     <button
+                        v-if="loading === 0"
+                        type="button"
+                        @click="stripePay"
                         class="px-3 py-2 border rounded flex items-center justify-center space-x-2 bg-primary text-white"
                     >
                         <span
@@ -92,6 +140,13 @@ const links = [
                         <span>Pay with</span>
                         <span> Credit Card</span>
                     </button>
+                    <span v-if="loading === 1">
+                        <Spin
+                            :width="'w-20'"
+                            :height="'h-20'"
+                            :color="'text-primary'"
+                        />
+                    </span>
                 </div>
             </div>
         </div>

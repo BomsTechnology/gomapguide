@@ -1,7 +1,9 @@
 [
     {
         "id": "1",
+        "priceId": "price_1LbRc3IgYYS6bcZVyB3zucSz",
         "title": "Accès",
+        "type": "payment",
         "price": 159,
         "period": "Paiement unique",
         "popular": false,
@@ -19,8 +21,10 @@
     },
     {
         "id": "2",
+        "priceId": "price_1LbSscIgYYS6bcZVp9RJIzgu",
         "title": "Profil Professionnel",
         "price": 259,
+        "type": "payment",
         "period": "Paiement unique",
         "popular": true,
         "bgcolor": {
@@ -43,8 +47,10 @@
     },
     {
         "id": "3",
+        "priceId": "price_1LbSudIgYYS6bcZVfefZGdUO",
         "title": "Profil Professionnel + Assistance 365",
         "price": 289,
+        "type": "subscription",
         "period": "Paiement annuel",
         "popular": false,
         "bgcolor": {
@@ -70,7 +76,9 @@
     },
     {
         "id": "4",
+        "priceId": "price_1LbSweIgYYS6bcZVbap86Yc2",
         "title": "Seo Local",
+        "type": "subscription",
         "price": 299,
         "period": "Paiement annuel",
         "popular": true,
@@ -94,6 +102,8 @@
     },
     {
         "id": "5",
+        "priceId": "price_1LbSyWIgYYS6bcZV5dy4R79E",
+        "type": "payment",
         "title": "Création du profil + 10 avis",
         "price": 399,
         "period": "Paiement unique",

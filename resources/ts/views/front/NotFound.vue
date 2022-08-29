@@ -5,7 +5,7 @@
         <div
             class="text- container mx-auto my-8 flex flex-col items-center justify-center space-y-6 px-5 text-center text-gray-600 sm:max-w-lg"
         >
-            <img src="/images/logo/logo1.png" alt="logo" class="h-18" />
+            <img src="/images/logo/logo2.png" alt="logo" class="h-18" />
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"

@@ -4,6 +4,8 @@ import homePlans from "@/data/plan.json";
 
 export type Plan = {
     id: string;
+    priceId: string;
+    type: string;
     title: string;
     price: number;
     period: string;
