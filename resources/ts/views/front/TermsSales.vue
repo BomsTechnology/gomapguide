@@ -10,8 +10,11 @@ const links = [
 </script>
 <template>
     <Header :title="'Conditions Générales de vente'" :links="links" />
-    <section class="xl:px-36 lg:px-18 px-4 py-14 text-sm lg:text-lg space-y-10 text-justify tracking-widest leading-8">
-        <p class=" ">
+    <section
+        class="xl:px-36 lg:px-18 px-4 py-14 text-sm lg:text-lg space-y-10 text-justify tracking-widest leading-8"
+    >
+        <p class="text-coolGray-400 text-center text-3xl">Comming Soon</p>
+        <!-- <p class=" ">
             En vigueur au 01/01/22 Les présentes conditions générales
             d’utilisation (dites « CGU ») ont pour objet l’encadrement juridique
             des modalités de mise à disposition du site et des services par
@@ -23,7 +26,6 @@ const links = [
             <h1 class="font-semibold text-2xl !mb-6 uppercase">ARTICLE {{ index+1 }} : {{ condition.title }} </h1>
             
            {{condition.content}}
-        </p>
-        
+        </p> -->
     </section>
 </template>

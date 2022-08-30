@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LocationMarkerIcon, MailIcon, PhoneIcon } from "@heroicons/vue/solid";
+import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/vue/24/solid";
 </script>
 <template>
     <footer class="">
@@ -38,16 +38,14 @@ import { LocationMarkerIcon, MailIcon, PhoneIcon } from "@heroicons/vue/solid";
                 class="lg:flex-row flex-col flex items-center lg:space-y-0 space-y-3 lg:space-x-3"
             >
                 <div class="flex items-center space-x-2">
-                    <span
-                        ><LocationMarkerIcon class="h-6 w-6 text-primary"
-                    /></span>
+                    <span><MapPinIcon class="h-6 w-6 text-primary" /></span>
 
                     <span class="text-sm text-gray-50 mt-1"
                         >1253, av McGill Collège, Montréal QC H3B 2Y5
                     </span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <span><MailIcon class="h-6 w-6 text-primary" /></span>
+                    <span><EnvelopeIcon class="h-6 w-6 text-primary" /></span>
 
                     <span class="text-sm text-gray-50 mt-1"
                         >contact@gomapguide.com</span
@@ -91,7 +89,7 @@ import { LocationMarkerIcon, MailIcon, PhoneIcon } from "@heroicons/vue/solid";
                     </svg>
                 </button>
                 <button class="bg-gray-700 hover:bg-primary p-3">
-                    <MailIcon class="h-5 w-4.5" />
+                    <EnvelopeIcon class="h-5 w-4.5" />
                 </button>
             </div>
         </div>

@@ -40,7 +40,11 @@ class StripePaymentController extends Controller
             //     'allowed_countries' => ['CA', 'FR', 'US']
             // ],
             'metadata' => [
-                'product_id' => $request->id
+                'product_id' =>  $request->id,
+                'product_title' => $request->title,
+                'product_price' => $request->price,
+                'product_period' => $request->period,
+
             ],
             'success_url' => url("success"),
             'cancel_url' => url("pay-erros"),

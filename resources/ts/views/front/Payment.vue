@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import Header from "@/components/Header.vue";
 import axios from "axios";
-// import { useRouter } from "vue-router";
+import { useRouter } from "vue-router";
 import { usePlanStore } from "@/stores/plan";
 import type { Plan } from "@/stores/plan";
 import { onMounted, ref, Ref } from "vue";
 import Spin from "../../components/Spin.vue";
 
-// const router = useRouter();
+const router = useRouter();
 const planStore = usePlanStore();
 const item: Ref<Array<Plan> | null> = ref(null);
 const loading: Ref<Number> = ref(0);
@@ -54,9 +54,12 @@ async function paypalPay() {
             loading.value = 0;
             console.log("Errors");
         }
-    } catch (e) {
+    } catch (e: any) {
         loading.value = 0;
-        console.log(e);
+        console.log(e.response.data.message);
+        router.push({
+            name: "pay-erros",
+        });
     }
 }
 const links = [

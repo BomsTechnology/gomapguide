@@ -12,268 +12,142 @@ import Services from '@/components/home/Services.vue';
                 Nos Services
             </h1>
             <div
-                class="xl:px-36 lg:px-18 px-4 w-full py-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
+                class="xl:px-36 lg:px-18 px-4 w-full py-8 grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-6"
             >
                 <div
-                    class="text-white text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
+                    class="text-white lg:col-span-2 text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
                 >
                     <span>
                         <svg
-                            xmlns="http://www.w3.org/2000/svg"
                             class="lg:h-20 h-12 w-12 lg:w-20"
-                            viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0.43 1064 928.69"
                         >
-                            <title>Person Add</title>
-                            <path
-                                d="M376 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <path
-                                d="M288 304c-87 0-175.3 48-191.64 138.6-2 10.92 4.21 21.4 15.65 21.4H464c11.44 0 17.62-10.48 15.65-21.4C463.3 352 375 304 288 304z"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-miterlimit="10"
-                                stroke-width="32"
-                            />
-                            <path
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                                d="M88 176v112M144 232H32"
-                            />
+                            <linearGradient
+                                id="a"
+                                x1="0%"
+                                x2="99.999%"
+                                y1="49.999%"
+                                y2="49.999%"
+                            >
+                                <stop offset=".03" stop-color="#4079d8" />
+                                <stop offset="1" stop-color="#4989f5" />
+                            </linearGradient>
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill-rule="nonzero">
+                                    <rect
+                                        fill="#4989f5"
+                                        height="696.14"
+                                        rx="36.88"
+                                        width="931"
+                                        x="53.45"
+                                        y="232.98"
+                                    />
+                                    <path
+                                        d="M936.81 227.75H100.06c-25.92 0-46.09 200.6-46.09 226.52L512.2 929.12h424.61c26-.071 47.059-21.13 47.13-47.13V274.87c-.077-25.996-21.134-47.049-47.13-47.12z"
+                                        fill="url(#a)"
+                                    />
+                                    <path
+                                        d="M266.03 349.56h266V.44H305.86z"
+                                        fill="#3c4ba6"
+                                    />
+                                    <path
+                                        d="M798.03 349.56h-266V.44H758.2zM984.45 66.62l.33 1.19c-.08-.42-.24-.81-.33-1.19z"
+                                        fill="#7babf7"
+                                    />
+                                    <path
+                                        d="M984.78 67.8l-.33-1.19C976.017 27.993 941.837.455 902.31.43H758.2L798 349.56h266z"
+                                        fill="#3f51b5"
+                                    />
+                                    <path
+                                        d="M79.61 66.62l-.33 1.19c.08-.42.24-.81.33-1.19z"
+                                        fill="#7babf7"
+                                    />
+                                    <path
+                                        d="M79.27 67.8l.33-1.19C88.033 27.993 122.213.455 161.74.43h144.12L266 349.56H0z"
+                                        fill="#7babf7"
+                                    />
+                                </g>
+                                <path
+                                    d="M266.48 349.47c0 73.412-59.513 132.925-132.925 132.925S.63 422.882.63 349.47z"
+                                    fill="#709be0"
+                                />
+                                <path
+                                    d="M532.33 349.47c0 73.412-59.513 132.925-132.925 132.925S266.48 422.882 266.48 349.47z"
+                                    fill="#3c4ba6"
+                                />
+                                <path
+                                    d="M798.18 349.47c0 73.412-59.513 132.925-132.925 132.925S532.33 422.882 532.33 349.47z"
+                                    fill="#709be0"
+                                />
+                                <path
+                                    d="M1064 349.47c0 73.412-59.513 132.925-132.925 132.925S798.15 422.882 798.15 349.47z"
+                                    fill="#3c4ba6"
+                                />
+                                <path
+                                    d="M931.08 709.6c-.47-6.33-1.25-12.11-2.36-19.49h-145c0 20.28 0 42.41-.08 62.7h84a73.05 73.05 0 0 1-30.75 46.89s0-.35-.06-.36a88 88 0 0 1-34 13.27 99.85 99.85 0 0 1-36.79-.16 91.9 91.9 0 0 1-34.31-14.87 95.72 95.72 0 0 1-33.73-43.1c-.52-1.35-1-2.71-1.49-4.09v-.15l.13-.1a93 93 0 0 1-.05-59.84A96.27 96.27 0 0 1 718.9 654c23.587-24.399 58.829-33.576 91.32-23.78a83 83 0 0 1 33.23 19.56l28.34-28.34c5-5.05 10.19-9.94 15-15.16a149.78 149.78 0 0 0-49.64-30.74 156.08 156.08 0 0 0-103.83-.91c-1.173.4-2.34.817-3.5 1.25A155.18 155.18 0 0 0 646 651a152.61 152.61 0 0 0-13.42 38.78c-16.052 79.772 32.623 158.294 111.21 179.4 25.69 6.88 53 6.71 78.89.83a139.88 139.88 0 0 0 63.14-32.81c18.64-17.15 32-40 39-64.27a179 179 0 0 0 6.26-63.33z"
+                                    fill="#fff"
+                                    fill-rule="nonzero"
+                                />
+                            </g>
                         </svg>
                     </span>
                     <h1 class="font-bold text-xl lg:text-3xl">
-                        Créez votre profil
+                        Gérez votre fiche
                     </h1>
-                    <p class="leading-relaxed text-sm lg:text-lg">
-                        Créez votre profil Google My Business et permettez à vos
-                        clients de vous trouver.
-                    </p>
                 </div>
                 <div
-                    class="text-white text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
+                    class="text-white lg:col-span-2 text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
                 >
                     <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="lg:h-20 h-12 w-12 lg:w-20"
-                            viewBox="0 0 512 512"
-                        >
-                            <title>Lock Closed</title>
-                            <path
-                                d="M336 208v-95a80 80 0 00-160 0v95"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <rect
-                                x="96"
-                                y="208"
-                                width="320"
-                                height="272"
-                                rx="48"
-                                ry="48"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                        </svg>
+                        <img
+                            src="/images/icon/security.png"
+                            class="lg:h-20 h-12 w-12 lg:w-20 object-cover"
+                        />
                     </span>
-                    <h1 class="font-bold text-xl lg:text-3xl">Sécurisation</h1>
-                    <p class="leading-relaxed text-sm lg:text-lg">
-                        Sécurisez votre profil Google MyBusiness pour empêcher
-                        les modifications malveillantes
-                    </p>
+                    <h1 class="font-bold text-xl lg:text-3xl">
+                        Sécurisez vos informations
+                    </h1>
                 </div>
                 <div
-                    class="text-white text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
+                    class="text-white lg:col-span-2 text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
                 >
                     <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="lg:h-20 h-12 w-12 lg:w-20"
-                            viewBox="0 0 512 512"
-                        >
-                            <title>Stats Chart</title>
-                            <rect
-                                x="64"
-                                y="320"
-                                width="48"
-                                height="160"
-                                rx="8"
-                                ry="8"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <rect
-                                x="288"
-                                y="224"
-                                width="48"
-                                height="256"
-                                rx="8"
-                                ry="8"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <rect
-                                x="400"
-                                y="112"
-                                width="48"
-                                height="368"
-                                rx="8"
-                                ry="8"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <rect
-                                x="176"
-                                y="32"
-                                width="48"
-                                height="448"
-                                rx="8"
-                                ry="8"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                        </svg>
+                        <img
+                            src="/images/icon/networking.png"
+                            class="lg:h-24 h-12 w-12 lg:w-24 object-cover"
+                        />
                     </span>
-                    <h1 class="font-bold text-xl lg:text-3xl">Référencement</h1>
-                    <p class="leading-relaxed text-sm lg:text-lg">
-                        Optimisez votre entreprise pour les recherches locales
-                        et soyez le premier en ligne
-                    </p>
+                    <h1 class="font-bold text-xl lg:text-3xl">
+                        Communiquer facilement avec vos clients
+                    </h1>
                 </div>
                 <div
-                    class="text-white text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
+                    class="text-white lg:col-span-3 text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
                 >
                     <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="lg:h-20 h-12 w-12 lg:w-20"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                        </svg>
+                        <img
+                            src="/images/icon/seo.png"
+                            class="lg:h-20 h-12 w-12 lg:w-20 object-cover"
+                        />
                     </span>
-                    <h1 class="font-bold text-xl lg:text-3xl">Avis</h1>
-                    <p class="leading-relaxed text-sm lg:text-lg">
-                        Gardez un profil attrayant et fidélisez vos clients avec
-                        plus d'avis positifs
-                    </p>
+                    <h1 class="font-bold text-xl lg:text-3xl">
+                        Référencez votre GMB
+                    </h1>
                 </div>
+
                 <div
-                    class="text-white text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
+                    class="text-white lg:col-span-3 text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
                 >
                     <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="lg:h-20 h-12 w-12 lg:w-20"
-                            viewBox="0 0 512 512"
-                        >
-                            <title>Globe</title>
-                            <path
-                                d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-miterlimit="10"
-                                stroke-width="32"
-                            />
-                            <path
-                                d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-miterlimit="10"
-                                stroke-width="32"
-                            />
-                            <path
-                                d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <path
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-miterlimit="10"
-                                stroke-width="32"
-                                d="M256 48v416M464 256H48"
-                            />
-                        </svg>
+                        <img
+                            src="/images/icon/services.png"
+                            class="lg:h-24 h-12 w-12 lg:w-24 object-cover"
+                        />
                     </span>
-                    <h1 class="font-bold text-xl lg:text-3xl">Interaction</h1>
-                    <p class="leading-relaxed text-sm lg:text-lg">
-                        Rapprochez vous de vos clients en augmentant votre temps
-                        de réaction
-                    </p>
-                </div>
-                <div
-                    class="text-white text-center flex flex-col justify-center items-center space-y-4 hover:bg-black/25 py-4 rounded hover:shadow transition-all duration-150"
-                >
-                    <span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="lg:h-20 h-12 w-12 lg:w-20"
-                            viewBox="0 0 512 512"
-                        >
-                            <title>Laptop</title>
-                            <rect
-                                x="48"
-                                y="96"
-                                width="416"
-                                height="304"
-                                rx="32.14"
-                                ry="32.14"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-linejoin="round"
-                                stroke-width="32"
-                            />
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-miterlimit="10"
-                                stroke-width="32"
-                                d="M16 416h480"
-                            />
-                        </svg>
-                    </span>
-                    <h1 class="font-bold text-xl lg:text-3xl">Site Web</h1>
-                    <p class="leading-relaxed text-sm lg:text-lg">
-                        Créez votre site Web et permettez à vos clients de
-                        visiter vos services et produits
-                    </p>
+                    <h1 class="font-bold text-xl lg:text-3xl">
+                        Exposez vos services
+                    </h1>
                 </div>
             </div>
         </div>

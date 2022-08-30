@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HomeIcon, ChevronRightIcon } from "@heroicons/vue/outline";
+import { HomeIcon, ChevronRightIcon } from "@heroicons/vue/24/outline";
 const props = defineProps({
     title: String,
     links: Array,

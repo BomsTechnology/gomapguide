@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CheckCircleIcon } from "@heroicons/vue/outline";
+import { CheckCircleIcon } from "@heroicons/vue/24/outline";
 import type { Plan } from "@/stores/plan";
 interface Props {
     data: Plan;

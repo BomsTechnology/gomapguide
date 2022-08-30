@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 const Home = () => import("@/views/front/Home.vue");
+const Error = () => import("@/views/front/Error.vue");
+const Success = () => import("@/views/front/Success.vue");
 const NavBar = () => import("@/components/NavBar.vue");
 const Footer = () => import("@/components/Footer.vue");
 const Plan = () => import("@/views/front/Plan.vue");
@@ -131,6 +133,22 @@ const routes: Array<RouteRecordRaw> = [
         },
         meta: {
             title: prefix + " - Paiement",
+        },
+    },
+    {
+        path: "/success",
+        name: "success",
+        component: Success,
+        meta: {
+            title: prefix + " - Paiement Réussie",
+        },
+    },
+    {
+        path: "/pay-erros",
+        name: "pay-erros",
+        component: Error,
+        meta: {
+            title: prefix + " - Erreur de paiement",
         },
     },
     {
