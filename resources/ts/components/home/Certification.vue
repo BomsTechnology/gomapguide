@@ -1,6 +1,6 @@
 <template>
     <section
-        class="w-full py-8 xl:px-36 lg:px-18 px-4 grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-6"
+        class="w-full py-8 xl:px-36 bg-white lg:px-18 px-4 grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-6"
     >
         <div
             class="bg-white p-8 rounded-xl shadow-md flex items-center justify-center hover:scale-95 trasitions-all"

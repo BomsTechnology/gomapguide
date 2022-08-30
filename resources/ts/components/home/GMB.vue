@@ -8,7 +8,9 @@ const modules = [Navigation, Autoplay];
 const items = ["/images/gmb1.jpeg", "/images/gmb2.jpeg", "/images/gmb3.jpeg"];
 </script>
 <template>
-    <section class="w-full px-4 py-10 flex items-center justify-center">
+    <section
+        class="w-full px-4 py-10 flex items-center justify-center bg-gray-200"
+    >
         <swiper
             :navigation="true"
             :slidesPerView="1"

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <section class="h-[80vh] relative">
+    <section class="h-screen relative">
         <img src="/images/seo1.jpg" class="w-full h-full object-cover" alt="" />
 
         <div
