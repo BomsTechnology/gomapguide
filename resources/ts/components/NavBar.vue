@@ -58,7 +58,7 @@ const navigationTo = async (routeName: string): Promise<void> => {
                     <img
                         src="/images/logo/logo2.png"
                         alt="logo"
-                        class="lg:h-16 h-12"
+                        class="lg:h-20 h-12"
                     />
                 </router-link>
                 <div

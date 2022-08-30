@@ -11,7 +11,7 @@ module.exports = {
                 overpass: "Overpass",
             },
             colors: {
-                primary: "#00cec9",
+                primary: "#ff1616",
                 secondary: "#81ecec",
             },
         },
