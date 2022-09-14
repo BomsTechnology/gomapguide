@@ -42,13 +42,17 @@ class CustomerPaymentNotification extends Notification
      */
     public function toMail($notifiable)
     {
-        return (new MailMessage)
+        return $this->data['product_title'] ? (new MailMessage)
             ->subject('Nouvelle Souscription')
             ->greeting('Hello, vous venez d\'éffectuer une nouvelle souscription')
             ->line('Plan: ' . $this->data['product_title'])
             ->line('Prix: ' . $this->data['product_price'] . 'usd')
             ->line('Validité: ' . $this->data['product_period'])
-            ->line('Thank you for using our application!');
+            ->line('Thank you for using our application!')
+            : (new MailMessage)
+            ->subject('Nouvelle Souscription')
+            ->greeting('Hello, vous venez d\'éffectuer une nouvelle souscription de ' . $this->data['product_price'] . 'usd')
+            ->line('Thank you for using our application!');;
     }
 
     /**

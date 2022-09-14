@@ -16,5 +16,6 @@ class Payment extends Model
         'customer_phone',
         'customer_address',
         'amount',
+        'type',
     ];
 }

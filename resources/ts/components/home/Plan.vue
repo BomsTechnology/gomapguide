@@ -15,13 +15,15 @@ onMounted(async () => {
 </script>
 <template>
     <div
-        class="w-full py-10 bg-gray-700 xl:px-36 lg:px-18 px-4 text-center lg:text-left"
+        class="w-full py-10 bg-white xl:px-36 lg:px-18 px-4 text-center lg:text-left"
     >
-        <h1 class="font-bold lg:text-2xl uppercase" id="plan">Nos Plans</h1>
-        <h3 class="text-gray-50">Souscrivez Maintenant</h3>
+        <h1 class="font-bold lg:text-2xl text-gray-800 uppercase" id="plan">
+            Nos Plans
+        </h1>
+        <h3 class="text-gray-700">Souscrivez Maintenant</h3>
     </div>
     <section
-        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 xl:px-36 lg:px-18 px-4 py-8"
+        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 xl:px-36 lg:px-18 px-4 py-8 bg-white"
     >
         <Plan v-for="(item, index) in items" :key="index" :data="item" />
         <router-link

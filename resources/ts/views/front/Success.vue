@@ -1,5 +1,27 @@
 <script setup lang="ts">
 import { CheckCircleIcon } from "@heroicons/vue/24/solid";
+import { onMounted } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import axios from "axios";
+
+const route = useRoute();
+const router = useRouter();
+onMounted(async () => {
+    if (route.query.paymentId && route.query.token && route.query.PayerID) {
+        try {
+            let response = await axios.post("/api/payment-paypal/success", {
+                paymentId: route.query.paymentId,
+                token: route.query.token,
+                PayerID: route.query.PayerID,
+            });
+        } catch (e: any) {
+            console.log(e.response.data.message);
+            router.push({
+                name: "pay-erros",
+            });
+        }
+    }
+});
 </script>
 
 <template>

@@ -35,9 +35,9 @@ async function stripePay() {
             loading.value = 0;
             console.log("Errors");
         }
-    } catch (e) {
+    } catch (e: any) {
         loading.value = 0;
-        console.log(e);
+        console.log(e.response.data.message);
     }
 }
 async function paypalPay() {
@@ -101,7 +101,7 @@ const links = [
                 <div
                     class="h-full w-full flex justify-center py-10 items-center px-4 lg:space-y-0 space-y-4 lg:space-x-4 lg:flex-row flex-col"
                 >
-                    <!-- <button
+                    <button
                         v-if="loading === 0"
                         type="button"
                         @click="paypalPay"
@@ -125,7 +125,7 @@ const links = [
                         </span>
                         <span>Pay with</span>
                         <span>Paypal</span>
-                    </button> -->
+                    </button>
                     <button
                         v-if="loading === 0"
                         type="button"

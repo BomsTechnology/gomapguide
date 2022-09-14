@@ -25,6 +25,7 @@ Route::post('webhook/payment/succeeded', function (Request $request) {
             'customer_phone' => $request->data['object']['customer_details']['phone'],
             'customer_address' => "{$request->data['object']['customer_details']['address']['city']} {$request->data['object']['customer_details']['address']['country']} {$request->data['object']['customer_details']['address']['line1']} / postal:{$request->data['object']['customer_details']['address']['postal_code']}",
             'amount' => $request->data['object']['amount_total'],
+            'type' => 'stripe'
         ]);
 
         $customerNotif = [
